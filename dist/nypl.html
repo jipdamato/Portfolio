@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>
+        Jennifer Ip's Portfolio
+    </title>
+    <link rel="icon" type=”image/svg+xml” href="favicon-nypl.svg">
+    <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+
+<body style="--accent-color: #DA2527">
+    <div class="main">
+        <div class="menu">
+            <div class="header">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 14" class="logomark">
+                    <polygon points="12 14 7 14 14 0 19 0 12 14" />
+                    <polygon points="2.1 9.79 0 14 5 14 7.1 9.79 2.1 9.79" />
+                    <polygon points="20 14 15 14 22 0 27 0 20 14" />
+                </svg>
+                <h4 class="name">Jennifer Ip</h4>
+                <button class="menu-btn">Menu</button>
+            </div>
+            <ul class="menu-opt">
+                <li><a href="index.html" class="menu-item">Work</a></li>
+                <li><a class="menu-item">About</a></li>
+                <li><a class="menu-item">Resume</a></li>
+                <li>
+                    <button class="menu-item contact-btn">Contact</button>
+                    <span class="email-copied">My email has been copied to your clipboard! 🎉</span>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+
+            <div class="portfolio-header">
+                <img src="placeholder.jpg" />
+                <div class="portfolio-info">
+                    <div class="portfolio-title">
+                        <h1>NYPL e-Reader App</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-content">
+                <p>The New York Public Library (NYPL) has been an essential provider of free books, information, ideas, and education for all New Yorkers for more than 100 years. The NYPL e-reader app allows users to instantly borrow from the library's collection of more than 300,000 e-books in just a few easy steps.</p>
+<hr>
+<h2>The Problem</h2>
+<p>Taking an in-depth look at the library's existing e-reader app, I discovered a couple of problems in it's structure.</p>
+<p>There were a few problems I found in the current app design:</p>
+<ol>
+<li>there wasn't a way for user to read the title of the book until they clicked on the book (unless they had impeccable vision to read it off the cover),</li>
+<li>there wasn't a way for users to find books in genres of their liking, unless they knew exactly what they were looking for,</li>
+<li>there wasn't a way in the app to save books users were interested in, but didn't have the time to read right away.</li>
+</ol>
+<hr>
+<h2>Simple Touches For Big Impact</h2>
+<p>These issues were solved while also upping the animation styling for the app to provide a more delightful user experience.</p>
+<h3>1. The Home Screen</h3>
+<p>Using the existing app, it was difficult to read the title of the books in the selection without taking another step to read more about the book.</p>
+<p><b>This was addressed this by making the book covers larger and adding the title and author under it so it was more visual and easier to read.</b></p>
+<table>
+<tr>
+<td><img src="images/NYPL/NYPL-PreviousHome.png"/></td>
+<td><img src="images/NYPL/NYPL-RedesignHome.png"/></td>
+</tr>
+</table>
+<h3>2. Simply For You</h3>
+<p>The existing app doesn't take the user's reading preferences into consideration. They have these generic sections set up that the user may or may not care about. To solve for this, <strong>a separate tab that would allow the user to customize their sections was created</strong> so they can view books they might be interested in.</p>
+<table>
+<tr>
+<td><img src="images/NYPL/NYPL-Your-Categories-Scroll.gif"/></td>
+<td></td>
+</tr>
+</table>
+<h3>3. Books on Your Time</h3>
+<p>There are times where you want to read a certain book, but timing just isn't right and you don't want to forget about it. In their website, there's a way to either hold (if there's a queue for it) or to put books in your &quot;book bag&quot;, as a way to save the book for later.</p>
+<img src="images/NYPL/NYPL-BookBagHold.png" alt="NYPL-HoldItem">
+<p>That's not an option in the app. This is where the addition of a favoriting function comes in handy.** By favoriting, it goes to the top of Your Categories so you have a reminder for when you are ready to immerse yourself.**</p>
+<table>
+<tr>
+<td><img src="images/NYPL/NYPL-Favorited.gif"/></td>
+<td></td>
+</tr>
+</table>
+
+            </div>
+
+        </div>
+    </div>
+    <input class="hidden-input" value="iamjenniferip@gmail.com">
+    <script src="scripts.js"></script>
+</body>
+
+</html>
