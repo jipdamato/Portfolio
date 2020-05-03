@@ -7,14 +7,13 @@ body {
   --accent-color: #555;
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  overflow: hidden;
   color: #555;
 }
 
 .main {
   display: flex;
   max-width: 1024px;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   padding: 0 48px;
 }
@@ -23,12 +22,17 @@ body {
   flex: 1;
   max-width: calc(100% / 6);
   min-width: 132px;
+  align-self: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .header {
   text-transform: uppercase;
   padding-top: 48px;
   padding-bottom: 72px;
+  background-color: #fff;
 }
 
 .logomark {
@@ -98,8 +102,13 @@ body {
 
 .content {
   flex: 1;
-  overflow-y: auto;
   font-size: 24px;
+  margin-left: 20px;
+}
+
+.intro {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .hidden-input {
@@ -179,6 +188,7 @@ bp:before {
 .portfolio-content h2,
 .portfolio-content h3 {
   color: var(--accent-color);
+  
 }
 
 .portfolio-header img {
@@ -194,8 +204,20 @@ bp:before {
 .portfolio-content h3,
 .portfolio-content h4,
 .portfolio-content ol,
-.portfolio-content ul {
+.portfolio-content ul,
+.portfolio-content blockquote {
   max-width: 72ch;
+}
+
+.portfolio-content h2 {
+  font-size: 2em;
+}
+.portfolio-content h3 {
+  font-size: 1.5em;
+}
+.portfolio-content h4 {
+  font-size: 1.25em;
+  max-width: 56ch;
 }
 
 .portfolio-content p {
@@ -207,17 +229,34 @@ bp:before {
   width: 100%;
 }
 
-@media (max-width: 360px) {
+.portfolio-content blockquote {
+  background-color: #fff;
+  box-shadow: 2px 2px 12px #ccc;
+  display: flex;
+  align-items: center;
+  margin: 1.25em 0;
+}
+
+.portfolio-content blockquote:before {
+  content: "\201C";
+  font-size: 52px;
+  font-weight: 800;
+  color: var(--accent-color);
+  padding: 0 .175ch;
+}
+
+@media (max-width: 830px) {
+  .home {
+    padding-top: 60px;
+  }
+
   .main {
       flex-direction: column;
       padding: 0;
   }
 
   .header {
-      padding-top: 40px;
-      padding-bottom: 80px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 20px;
       display: flex;
   }
 
@@ -226,7 +265,9 @@ bp:before {
       min-width: initial;
       flex: initial;
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
+      width: 100%;
+      box-shadow: 2px 2px 12px rgba(100, 100, 100, .2);
   }
 
   .menu-btn {
@@ -242,5 +283,15 @@ bp:before {
 
   .menu-opt:not(.show) {
       display: none;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .portfolio-info, 
+  .portfolio-content {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
