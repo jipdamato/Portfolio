@@ -35,6 +35,12 @@ body {
   background-color: #fff;
 }
 
+.header-link {
+  display: contents;
+  color: inherit;
+  text-decoration: none;
+}
+
 .logomark {
   max-width: 75px;
   fill: var(--accent-color);
@@ -245,6 +251,32 @@ bp:before {
   padding: 0 .175ch;
 }
 
+.image-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: initial !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-grid li {
+  max-width: 230px;
+}
+
+.image-grid li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.image-grid li[data-content]:after {
+  content: attr(data-content);
+  width: 100%;
+  display: block;
+  padding: .5rem;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+}
+
 @media (max-width: 830px) {
   .home {
     padding-top: 60px;
@@ -294,4 +326,5 @@ bp:before {
     padding-left: 20px;
     padding-right: 20px;
   }
+
 }
