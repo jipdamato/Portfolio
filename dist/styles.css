@@ -261,7 +261,7 @@ bp:before {
 }
 
 .image-grid li {
-  max-width: 230px;
+  max-width: 240px;
 }
 
 .image-grid li:not(:last-child) {
