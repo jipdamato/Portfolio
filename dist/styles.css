@@ -123,8 +123,21 @@ body {
   position: absolute;
 }
 
-.home {
+.home, .about {
   padding-top: 210px;
+}
+
+.about {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15pt;
+}
+
+.about-image {
+  float: left; 
+  max-width: 360px; 
+  margin-top: .5rem; 
+  margin-right: 1rem;
 }
 
 .portfolio-piece {
@@ -278,7 +291,7 @@ bp:before {
 }
 
 @media (max-width: 830px) {
-  .home {
+  .home, .about {
     padding-top: 60px;
   }
 
@@ -325,6 +338,12 @@ bp:before {
   .portfolio-content {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
 }
