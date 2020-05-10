@@ -185,16 +185,18 @@ body {
 }
 
 bp {
-  display: inline;
+  display: inline-block;
+  height: 0;
+  width: 24px;
+  text-align: center;
 }
 
 bp:before {
   content: "\25b0";
   font-size: 2em;
   display: inline-flex;
-  line-height: 0;
-  vertical-align: middle;
-  transform: scaleX(.6) translateY(2px);
+  line-height: .15em;
+  transform: scaleX(.6);
 }
 
 .portfolio-header {
