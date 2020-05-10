@@ -290,6 +290,9 @@ bp:before {
 }
 
 @media (max-width: 830px) {
+
+  
+
   .home, .about {
     padding-top: 60px;
   }
@@ -299,9 +302,14 @@ bp:before {
       padding: 0;
   }
 
+  .intro {
+    padding-left: 20px;
+  }
+
   .header {
       padding: 20px;
       display: flex;
+      align-items: baseline;
   }
 
   .menu {
@@ -338,7 +346,16 @@ bp:before {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .home .portfolio-info {
+    flex-direction: column;
+  }
 
+  .home .portfolio-info > * {
+    width: auto;
+  }
+  .portfolio-description {
+    padding-top: 20px;
+  }
   .about-image {
     max-width: 100%;
     margin-right: 0;
