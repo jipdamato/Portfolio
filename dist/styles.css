@@ -186,18 +186,13 @@ body {
 
 bp {
   display: inline-block;
-  height: 0;
-  width: 24px;
-  text-align: center;
+  height: 7px;
+  width: 7px;
+  margin: 0 9px;
+  background-color: currentColor;
+  transform: skewX(-20deg);  
 }
 
-bp:before {
-  content: "\25b0";
-  font-size: 2em;
-  display: inline-flex;
-  line-height: .15em;
-  transform: scaleX(.6);
-}
 
 .portfolio-header {
   margin: 0;
