@@ -190,7 +190,7 @@ bp {
   width: 7px;
   margin: 0 9px;
   background-color: currentColor;
-  transform: skewX(-20deg);  
+  transform: translateY(1px) skewX(-20deg);  
 }
 
 
