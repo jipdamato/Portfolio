@@ -1,0 +1,10 @@
+{
+    "name": "Jennifer Ip's Portfolio",
+    "short_name": "Jen Ip",
+    "description": "Jennifer Ip's Portfolio",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff"
+}

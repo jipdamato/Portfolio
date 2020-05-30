@@ -29,3 +29,7 @@ document.querySelector('.menu-btn').addEventListener('click', () => {
 function toggleMenu() {
     menuOpt.classList.toggle('show')
 }
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then((registration) => registration.update());
+}
