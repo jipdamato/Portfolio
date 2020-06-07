@@ -37,13 +37,17 @@ body {
 
 .header-link {
   display: contents;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
+
+.main:not(.info-page) .header-link, .header-link:hover {
+  color: var(--accent-color);
+  }
 
 .logomark {
   max-width: 75px;
-  fill: var(--accent-color);
+  fill: currentColor;
   width: 100%;
 }
 
@@ -53,7 +57,7 @@ body {
   font-size: 24px;
   margin: 0;
   padding-top: 20px;
-  color: var(--accent-color);
+
 }
 .menu-btn {
   display: none;
@@ -91,6 +95,10 @@ body {
   background-color: transparent;
   width: 100%;
   text-align: inherit;
+}
+
+.menu-item:hover {
+  color: var(--accent-color);
 }
 
 .email-copied {
@@ -174,7 +182,7 @@ body {
 
 .portfolio-title h2 {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-style: italic;
 }
 
