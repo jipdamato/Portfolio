@@ -334,12 +334,20 @@ bp {
   }
 
   .menu-opt {
-      background-color: var(--accent-color);
-      color: white;
-      text-align: center;
-      padding: 20px 0;
+    background-color: #555;  
+    color: white;
+    text-align: center;
+    padding: 20px 0;
   }
 
+  .main:not(.info-page) .menu-opt {
+    background-color: var(--accent-color);
+  }
+
+  .menu-item:hover {
+    color: white;
+    text-decoration: underline;
+  }
   .menu-opt:not(.show) {
       display: none;
   }
