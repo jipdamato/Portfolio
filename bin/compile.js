@@ -2,6 +2,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
 import MarkdownIt from 'markdown-it';
+import mdLinkAttrs from '@gerhobbelt/markdown-it-link-attributes';
 
 const HTML_WEB_DIR = path.resolve(__dirname, '..', 'web');
 const HTML_DIST_DIR = path.resolve(__dirname, '..', 'dist');
@@ -9,6 +10,7 @@ const DATABASE_JSON_PATH = path.resolve(__dirname, '..', 'gen', 'database.json')
 const TEMPLATE_TAG_REGEX = /{{\s*([\w\.]+)\s*}}/g;
 
 const md = new MarkdownIt({ html: true });
+md.use(mdLinkAttrs);
 
 function getHtmlFilePaths(directory) {
   return glob.sync(`${directory}/**/*.html`);

@@ -21,10 +21,12 @@
   },
   "homepage": "https://github.com/ddamato/handsoff#readme",
   "devDependencies": {
+    "@gerhobbelt/markdown-it-link-attributes": "^3.0.0-1",
     "concurrently": "^5.0.2",
     "esm": "^3.2.25",
     "fs-extra": "^8.1.0",
     "glob": "^7.1.6",
+    "i": "^0.3.6",
     "koa": "^2.11.0",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
@@ -32,6 +34,7 @@
     "make-runnable": "^1.3.6",
     "markdown-it": "^10.0.0",
     "nodemon": "^2.0.2",
+    "npm": "^7.6.0",
     "nunjucks": "^3.2.0",
     "open": "^7.0.0"
   }
